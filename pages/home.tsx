@@ -4,53 +4,60 @@ import ReactDom from 'react-dom'
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
+import Counter from './Counter'
 import Link from "next/link";
-import {Card} from "@mui/material";
-import ResponsiveAppBar from "../pages/layout/top";
-import CreateHead from "./layout/head";
-import {maxWidth, styled} from "@mui/system";
-
-const TopStyle = styled('div')({
-  width: '100%'
-
-})
-
 
 const Home: NextPage = () => {
 
+  let location;
+  let windowTest;
 
+  if (process.browser) {
+    location = document.location;
+    windowTest = window.location.href;
+
+    ReactDom.render(<Counter name="React"/>, document.getElementById("app"))
+  }
 
   return (
     <div className={styles.container}>
-      <CreateHead/>
+      <Head>
+        <title></title>
+        <meta name="description" content="JPA SHOP FRONT" />
+        <link rel="icon" href="/favicon.ico" />
+        
+      </Head>
 
       <main className={styles.main}>
-        <ResponsiveAppBar/>
+        <h1 className={styles.title}>
+          Welcome to
+          <Link href={'/'}>
+            JPA SHOP HOME
+          </Link>
+        </h1>
 
         <p className={styles.description}>
-          MAIN PAGE
-          {/*<code className={styles.code}>pages/index.tsx</code>*/}
+          Get started by editing{' '}
+          <code className={styles.code}>pages/index.tsx</code>
         </p>
         
 
         <div className={styles.grid}>
-          {/*<Card variant={"outlined"} >*/}
-          {/*  <Link href={'/api/member'} color="inherit">*/}
-          {/*    <h2>Member Service &rarr; <br/>Create Member by OAuth</h2>*/}
-          {/*  </Link>*/}
-          {/*</Card>*/}
-          <div className={styles.card}>
-            <Link href="/home">
-              <h2>Member &rarr;</h2>
-            </Link>
+          <a href="https://nextjs.org/docs" className={styles.card}>
+            <h2>Documentation &rarr;</h2>
+            <p>Find in-depth information about Next.js features and API.</p>
+          </a>
+
+          <a href="https://nextjs.org/learn" className={styles.card}>
+            <h2>Learn &rarr;</h2>
             <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </div>
+          </a>
 
           <a
             href="https://github.com/vercel/next.js/tree/canary/examples"
             className={styles.card}
           >
-            <h2>Chat Room &rarr;</h2>
+            <h2>Examples &rarr;</h2>
             <p>Discover and deploy boilerplate example Next.js projects.</p>
           </a>
 
