@@ -5,8 +5,9 @@ import Link from 'next/link'
 const fetcher = (url: string) => fetch(url).then((res) => res.json())
 
 export default function Index() {
-  const { data, error } = useSwr<Member[]>('/api/member', fetcher)
+  const { data, error } = useSwr<Member[]>('http://localhost:8080/api/members', fetcher)
 
+  console.log(data, error);
   if (error) return <div>Failed to load member</div>
   if (!data) return <div>Loading...</div>
 

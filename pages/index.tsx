@@ -40,7 +40,7 @@ const Home: NextPage = () => {
           {/*  </Link>*/}
           {/*</Card>*/}
           <div className={styles.card}>
-            <Link href="/home">
+            <Link href="/member">
               <h2>Member &rarr;</h2>
             </Link>
             <p>Learn about Next.js in an interactive course with quizzes!</p>
