@@ -10,6 +10,7 @@ import ResponsiveAppBar from "../pages/layout/top";
 import CreateHead from "./layout/head";
 import {maxWidth, styled} from "@mui/system";
 
+
 const TopStyle = styled('div')({
   width: '100%'
 
@@ -21,6 +22,7 @@ const Home: NextPage = () => {
 
 
   return (
+
     <div className={styles.container}>
       <CreateHead/>
 
@@ -39,12 +41,15 @@ const Home: NextPage = () => {
           {/*    <h2>Member Service &rarr; <br/>Create Member by OAuth</h2>*/}
           {/*  </Link>*/}
           {/*</Card>*/}
-          <div className={styles.card}>
-            <Link href="/member">
+
+
+          {/*Link 안에 두 개이상의 html 태그는 먹히지 않으나 div 내의 html은 상관없음*/}
+          <Link href="/member">
+            <div className={styles.card} >
               <h2>Member &rarr;</h2>
-            </Link>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </div>
+              <p>Learn about Next.js in an interactive course with quizzes!</p>
+            </div>
+          </Link>
 
           <a
             href="https://github.com/vercel/next.js/tree/canary/examples"

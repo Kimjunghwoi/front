@@ -21,15 +21,22 @@ export default function Index() {
      <CreateHead/>
      <main className={styles.main}>
          <ResponsiveAppBar/>
-          <ul>
-            {data.map((member) => (
-                <li key={member.seq}>
-                  <Link href="/member/[seq]" as={`/member/${member.seq}`}>
-                    {`Member ${member.seq} ${member.email} ${member.nickname}`}
-                  </Link>
-                </li>
-            ))}
-          </ul>
+         <p className={styles.description}>
+             Member List
+         </p>
+
+         <div className={styles.grid}>
+             <ul>
+                 {data.map((member) => (
+                     <li key={member.seq}>
+                         <Link href="/member/[seq]" as={`/member/${member.seq}`}>
+                             {`Member ${member.seq} ${member.email} ${member.nickname}`}
+                         </Link>
+                     </li>
+                 ))}
+             </ul>
+         </div>
+
      </main>
      <footer className={styles.footer}>
          <a
