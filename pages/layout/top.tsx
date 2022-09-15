@@ -12,8 +12,10 @@ import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import AccessibilityNewIcon from '@mui/icons-material/AccessibilityNew';
+import {Link} from "@mui/material";
 
-const pages = ['Products', 'Pricing', 'Blog'];
+const pages = ['Member', 'ChatRoom', 'Blog'];
+const href = ['/member', '/chatRoom', '/blog']
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
 const ResponsiveAppBar = () => {
@@ -34,6 +36,15 @@ const ResponsiveAppBar = () => {
     const handleCloseUserMenu = () => {
         setAnchorElUser(null);
     };
+
+    const getHref  = (index: number) => {
+
+        if(!href.at(index) || href.at(index) == "undefined") return "/"
+
+
+
+        return href.at(index)
+    }
 
     return (
         <AppBar position="static" >
@@ -67,7 +78,7 @@ const ResponsiveAppBar = () => {
                             onClick={handleOpenNavMenu}
                             color="inherit"
                         >
-                            <MenuIcon />
+                        <MenuIcon />
                         </IconButton>
                         <Menu
                             id="menu-appbar"
@@ -87,9 +98,16 @@ const ResponsiveAppBar = () => {
                                 display: { xs: 'block', md: 'none' },
                             }}
                         >
-                            {pages.map((page) => (
-                                <MenuItem key={page} onClick={handleCloseNavMenu}>
-                                    <Typography textAlign="center">{page}</Typography>
+                            {pages.map((page,index) => (
+                                <MenuItem key={page} onClick={handleCloseNavMenu} >
+                                    <Typography
+                                        textAlign="center"
+                                        component={Link}
+                                        href={getHref(index)}
+                                        sx={{
+                                            textDecoration: "none"
+                                        }}>{page}
+                                    </Typography>
                                 </MenuItem>
                             ))}
                         </Menu>
@@ -99,7 +117,7 @@ const ResponsiveAppBar = () => {
                         variant="h5"
                         noWrap
                         component="a"
-                        href=""
+                        href="/"
                         sx={{
                             mr: 2,
                             display: { xs: 'flex', md: 'none' },
