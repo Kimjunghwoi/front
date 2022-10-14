@@ -3,7 +3,7 @@ import { useEffect } from 'react';
 
 import LoginNaver from './loginNaver';
 
-export default function login() {
+function login() {
     const router = useRouter();
 
     const token = router.query.access_token;
@@ -12,9 +12,9 @@ export default function login() {
         //access_token이 있으면.. back으로 보내서 계정 정보 확인 및 가입..처리..
         if (window.location.href.includes('access_token')) {
             // alert(message);
-//          console.log("login success : ", window.location.href.toString());
-            window.localStorage.setItem('token', window.location.href.split('=')[1].split('&')[0]?? 'none');
-            router.push('/');
+            console.log("login success : ", window.location.href.toString());
+            window.localStorage.setItem('token', window.location.href.split('=')[1].split('&')[0] ?? 'none');
+            // router.push('/').then(r => );
         }
     }, [])
 

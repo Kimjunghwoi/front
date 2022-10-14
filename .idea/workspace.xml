@@ -4,19 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fd1c31f0-eb40-424b-9d82-00797bc43244" name="Changes" comment="머티리얼,,">
-      <change afterPath="$PROJECT_DIR$/pages/api/[seq].ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/interface/member.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/layout/head.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/member.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/member/[seq].tsx" afterDir="false" />
+    <list default="true" id="fd1c31f0-eb40-424b-9d82-00797bc43244" name="Changes" comment="_app.tsx  add layout">
+      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/loginNaverCallback.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/timer.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/front.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/front.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/api/member.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/home.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/home.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/Home.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/Home.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/layout/top.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/layout/top.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/login.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/login.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/loginNaver.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/loginNaver.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/member.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/member.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -31,13 +34,25 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
-        <option value="TypeScript JSX File" />
         <option value="TypeScript File" />
+        <option value="TypeScript JSX File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/next.config.js" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/pages/Counter.tsx" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/pages/_app.tsx" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/pages/home.tsx" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/pages/index.tsx" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/pages/layout/top.tsx" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/pages/login.tsx" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/pages/loginNaver.tsx" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/pages/member.tsx" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/pages/timer.tsx" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -57,6 +72,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "last_opened_file_path": "C:/Users/jhkim/IdeaProjects/front/static/images/avatar",
     "node.js.detected.package.eslint": "true",
@@ -65,7 +81,10 @@
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_interpreter_path": "node",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.keymap",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
     "ts.external.directory.path": "C:\\Users\\jhkim\\IdeaProjects\\front\\node_modules\\typescript\\lib"
   }
 }]]></component>
@@ -77,6 +96,7 @@
       <recent name="C:\Users\jhkim\IdeaProjects\front" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\jhkim\IdeaProjects\front\pages\api\member" />
       <recent name="C:\Users\jhkim\IdeaProjects\front\pages" />
       <recent name="C:\Users\jhkim\IdeaProjects\front\pages\member" />
       <recent name="C:\Users\jhkim\IdeaProjects\front\src" />
@@ -109,7 +129,15 @@
       <option name="presentableId" value="Default" />
       <updated>1662523832939</updated>
       <workItem from="1663030218137" duration="16307000" />
-      <workItem from="1663055052312" duration="15571000" />
+      <workItem from="1663055052312" duration="22740000" />
+      <workItem from="1663197939603" duration="18690000" />
+      <workItem from="1663227882240" duration="2835000" />
+      <workItem from="1663286880029" duration="8090000" />
+      <workItem from="1663550818501" duration="656000" />
+      <workItem from="1663648857521" duration="5095000" />
+      <workItem from="1664857523303" duration="8610000" />
+      <workItem from="1664950548632" duration="3086000" />
+      <workItem from="1665620169930" duration="15845000" />
     </task>
     <task id="LOCAL-00001" summary="머티리얼,,">
       <created>1663057401709</created>
@@ -118,7 +146,49 @@
       <option name="project" value="LOCAL" />
       <updated>1663057401709</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="rest...api..">
+      <created>1663137183901</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1663137183901</updated>
+    </task>
+    <task id="LOCAL-00003" summary="rest...api..">
+      <created>1663137697542</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1663137697542</updated>
+    </task>
+    <task id="LOCAL-00004" summary="rest...api..">
+      <created>1663138774812</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1663138774812</updated>
+    </task>
+    <task id="LOCAL-00005" summary="import layout &#10;menubar a -&gt; Link(mui)">
+      <created>1663208102074</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1663208102074</updated>
+    </task>
+    <task id="LOCAL-00006" summary="NAVER LOGIN , ENV FILE UPDATE">
+      <created>1663230705688</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1663230705688</updated>
+    </task>
+    <task id="LOCAL-00007" summary="_app.tsx  add layout">
+      <created>1663312950440</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1663312950440</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -141,7 +211,11 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="머티리얼,," />
-    <option name="LAST_COMMIT_MESSAGE" value="머티리얼,," />
+    <MESSAGE value="rest...api.." />
+    <MESSAGE value="import layout &#10;menubar a -&gt; Link(mui)" />
+    <MESSAGE value="NAVER LOGIN , ENV FILE UPDATE" />
+    <MESSAGE value="_app.tsx  add layout" />
+    <option name="LAST_COMMIT_MESSAGE" value="_app.tsx  add layout" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

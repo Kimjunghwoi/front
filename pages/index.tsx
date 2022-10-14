@@ -37,6 +37,13 @@ const Home: NextPage = () => {
             </div>
           </Link>
 
+          <Link href="/timer">
+            <div className={styles.card}>
+              <h2>Timer &rarr;</h2>
+              <p>Learn about Next.js in an interactive course with quizzes!</p>
+            </div>
+          </Link>
+
           <a
               href="https://github.com/vercel/next.js/tree/canary/examples"
               className={styles.card}

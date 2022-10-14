@@ -4,7 +4,12 @@ import useSwr from 'swr'
 import Link from 'next/link'
 import styles from '../styles/Home.module.css'
 
-const fetcher = (url: string) => fetch(url).then((res) => res.json())
+const fetcher = (url: string) => fetch(url,{
+    method: "GET",
+    headers: {
+        "ContentType": "application/json"
+    }
+}).then((res) => res.json())
 
 export default function Index() {
   const { data, error } = useSwr<Member[]>('/api/members', fetcher);
@@ -30,6 +35,7 @@ export default function Index() {
              </ul>
          </div>
         </>
+
 
   )
 }
